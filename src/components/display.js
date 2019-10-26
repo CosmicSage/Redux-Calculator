@@ -34,6 +34,7 @@ class Display extends React.Component {
     }
     catch (e) {
       result = "Invalid Math Operation! Try Again";
+      store.dispatch(changeResult(this.props.DISPLAY));
     }
     return (
       <>
